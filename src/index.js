@@ -2,7 +2,7 @@
 
 import React from "react"
 import ReactDOM from "react-dom"
-import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom"
+import { HashRouter as Router, Routes, Route, Outlet } from "react-router-dom"
 
 // components
 import TodoContainer from './functionbased/components/TodoContainer'
