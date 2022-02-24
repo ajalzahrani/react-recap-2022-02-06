@@ -2,7 +2,7 @@
 
 import React from "react"
 import ReactDOM from "react-dom"
-import { HashRouter as Router, Routes, Route, Outlet } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom"
 
 // components
 import TodoContainer from './functionbased/components/TodoContainer'
@@ -27,7 +27,7 @@ const element = "<h1>Hello, react 2022</h1>"
 ReactDOM.render(
     <React.StrictMode>
       <main />
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Navbar />
         <Routes>
           <Route exact path='/' element={<TodoContainer/>} />
